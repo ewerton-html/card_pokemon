@@ -1,0 +1,79 @@
+@media (max-width: 480px) {
+  header {
+    height: 20%;
+  }
+  button {
+    display: none;
+  }
+  .front_card {
+    height: 80%vh;
+  }
+  .card_contents {
+    margin: 8px;
+  }
+
+  .card_contents_top h2 {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px 0px;
+  }
+
+  .card_contents_top span {
+    font-size: 12px;
+  }
+  .card_contents_center img {
+    padding: 10px;
+  }
+  .description_text {
+  height: 90%;
+  font-size: 10px;
+}
+  .fade {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+  }
+
+  .help_modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90vh;
+    width: 90vw;
+    z-index: 10;
+  }
+
+  .fade,
+  .help_modal {
+    transition: all 0.5s;
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .help_arrows {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  .arrows {
+    height: 40px;
+    width: 50%;
+    background-image: url("../imagens/seta.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .hide {
+    opacity: 0;
+  }
+}
